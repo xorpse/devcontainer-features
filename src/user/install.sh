@@ -10,8 +10,18 @@ if [ "$USERNAME" = "none" ]; then
     exit 0
 fi
 
-if [ "$USERNAME" = "automatic" ]; then
-    USERNAME="vscode"
+if [ "$USERNAME" = "auto" ] || [ "$USERNAME" = "automatic" ]; then
+    USERNAME=""
+    POSSIBLE_USERS="vscode node codespace $(awk -v val=1000 -F: '$3==val{print $1}' /etc/passwd 2>/dev/null)"
+    for CURRENT_USER in $POSSIBLE_USERS; do
+        if id -u "$CURRENT_USER" >/dev/null 2>&1; then
+            USERNAME="$CURRENT_USER"
+            break
+        fi
+    done
+    if [ -z "$USERNAME" ]; then
+        USERNAME="vscode"
+    fi
 fi
 
 if [ "$USER_UID" = "automatic" ]; then

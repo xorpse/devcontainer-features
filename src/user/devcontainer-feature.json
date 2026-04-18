@@ -12,6 +12,7 @@
         "vscode",
         "codespace",
         "none",
+        "auto",
         "automatic"
       ],
       "default": "automatic",
@@ -20,7 +21,7 @@
     "userUid": {
       "type": "string",
       "proposals": [
-        "1000",
+        "1001",
         "automatic"
       ],
       "default": "automatic",
@@ -29,7 +30,7 @@
     "userGid": {
       "type": "string",
       "proposals": [
-        "1000",
+        "1001",
         "automatic"
       ],
       "default": "automatic",

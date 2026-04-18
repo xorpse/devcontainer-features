@@ -1,0 +1,31 @@
+{
+    "default": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {},
+            "common-utils": {}
+        }
+    },
+    "no_zsh": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {},
+            "common-utils": {
+                "installZsh": false,
+                "installOhMyZsh": false
+            }
+        }
+    },
+    "zsh_default_shell": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {},
+            "common-utils": {
+                "configureZshAsDefaultShell": true
+            }
+        }
+    }
+}
