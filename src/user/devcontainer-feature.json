@@ -1,0 +1,44 @@
+{
+  "name": "user",
+  "id": "user",
+  "version": "1.0.0",
+  "description": "Create a user and group with the specified UID/GID.",
+  "documentationURL": "https://github.com/xorpse/devcontainer-features/tree/master/src/user",
+  "options": {
+    "username": {
+      "type": "string",
+      "proposals": [
+        "devcontainer",
+        "vscode",
+        "codespace",
+        "none",
+        "automatic"
+      ],
+      "default": "automatic",
+      "description": "Username of the user"
+    },
+    "userUid": {
+      "type": "string",
+      "proposals": [
+        "1000",
+        "automatic"
+      ],
+      "default": "automatic",
+      "description": "UID for the user"
+    },
+    "userGid": {
+      "type": "string",
+      "proposals": [
+        "1000",
+        "automatic"
+      ],
+      "default": "automatic",
+      "description": "GID for the user"
+    },
+    "sudo": {
+      "type": "boolean",
+      "default": true,
+      "description": "Grant the user passwordless sudo access"
+    }
+  }
+}

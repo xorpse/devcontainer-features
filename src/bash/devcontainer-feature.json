@@ -1,0 +1,8 @@
+{
+  "name": "bash",
+  "id": "bash",
+  "version": "1.0.0",
+  "description": "Install bash.",
+  "documentationURL": "https://github.com/xorpse/devcontainer-features/tree/master/src/bash",
+  "options": {}
+}

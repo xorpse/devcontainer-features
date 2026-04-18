@@ -1,0 +1,42 @@
+{
+    "default_user": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {}
+        }
+    },
+    "custom_user": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {
+                "username": "devcontainer",
+                "userUid": "1001",
+                "userGid": "1001",
+                "sudo": true
+            }
+        }
+    },
+    "no_sudo": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {
+                "username": "testuser",
+                "userUid": "1002",
+                "userGid": "1002",
+                "sudo": false
+            }
+        }
+    },
+    "none_user": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {
+                "username": "none"
+            }
+        }
+    }
+}
