@@ -1,0 +1,3 @@
+[submodule "src/nvim/config"]
+	path = src/nvim/config
+	url = git@github.com:xorpse/nvim-config.git

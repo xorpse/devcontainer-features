@@ -38,11 +38,13 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
     # glibc and locale support
     apk add --no-cache \
         glibc \
+        glibc-iconv \
         glibc-locale-posix \
         || true
 
     # GNU/POSIX utilities — replace busybox with full implementations
     apk add --no-cache \
+        posix-libc-utils \
         coreutils \
         findutils \
         grep \

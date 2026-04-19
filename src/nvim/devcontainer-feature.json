@@ -1,0 +1,14 @@
+{
+  "name": "Neovim (via bob)",
+  "id": "nvim",
+  "version": "1.0.0",
+  "description": "Installs Neovim using the bob version manager and configures it with the bundled nvim configuration.",
+  "documentationURL": "https://github.com/xorpse/devcontainer-features/tree/master/src/nvim",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "stable",
+      "description": "Neovim version to install via bob (e.g., stable, nightly, or a specific version)"
+    }
+  }
+}
