@@ -1,0 +1,11 @@
+{
+    "default": {
+        "image": "cgr.dev/chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {},
+            "common-utils": {},
+            "nvim": {}
+        }
+    }
+}

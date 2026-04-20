@@ -10,5 +10,8 @@
       "default": "stable",
       "description": "Neovim version to install via bob (e.g., stable, nightly, or a specific version)"
     }
-  }
+  },
+  "installsAfter": [
+    "ghcr.io/xorpse/devcontainer-features/common-utils"
+  ]
 }
