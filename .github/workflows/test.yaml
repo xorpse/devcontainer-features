@@ -16,6 +16,7 @@ jobs:
           - bash
           - user
           - common-utils
+          - nvim
     steps:
       - uses: actions/checkout@v4
 
